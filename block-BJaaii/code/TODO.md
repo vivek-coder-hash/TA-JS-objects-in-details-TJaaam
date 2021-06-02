@@ -30,6 +30,37 @@ Getter
 #### Test
 
 ```js
+class Stack{
+    constructor() {
+        this.stack = [];
+    }
+    push(num) {
+        this.stack.push(num);
+        return this.stack
+    };
+    pop() {
+        this.stack.pop();
+        return this.stack
+    };
+    peek(index=this.stack.length-1){
+        return this.stack[index];
+    };
+    reverse(){
+       const reverseArr =  this.stack.reverse();
+       return reverseArr;
+    };
+    isEmpty(){
+       return  this.stack.length < 1 ? true : false;
+    };
+    displayStack(){
+        return this.stack.join(' ')
+    };
+get length(){
+     return this.stack.length;
+    }
+}
+
+
 let myStack = new Stack();
 myStack.push('One');
 myStack.push('Two');
