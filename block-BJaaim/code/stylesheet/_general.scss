@@ -1,0 +1,29 @@
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+}
+body{
+    background-color: #8cbbbb;
+}
+
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-around;
+}
+.grid{
+    display: grid;
+}
+.template-column-2{
+   grid-template-columns: repeat(2, 1fr);
+}
+.gap{
+    gap: 2rem;
+}
